@@ -31,32 +31,32 @@
 
 
 
-const button = document.getElementById("reload");
-const container = document.getElementById("container");
-document.addEventListener("DOMContentLoaded", () => {
-  loadNewCard();
-  button.addEventListener("click", loadNewCard);
-});
-function loadNewCard() {
-  fetch("https://db.ygoprodeck.com/api/v7/randomcard.php").then(response=>{
-    return response.json()
-  }).then(body =>{
-    console.log(body)
-    let card = body
-    for(let cards of card){
-        const section = document.createElement("div")
-        const heading = document.createElement("h3")
-        section.classList.add("card")
-        section.appendChild(heading)
-        displaySection.appendChild(section)
-    }
-  })
+// const button = document.getElementById("reload");
+// const container = document.getElementById("container");
+// document.addEventListener("DOMContentLoaded", () => {
+//   loadNewCard();
+//   button.addEventListener("click", loadNewCard);
+// });
+// function loadNewCard() {
+//   fetch("https://db.ygoprodeck.com/api/v7/randomcard.php").then(response=>{
+//     return response.json()
+//   }).then(body =>{
+//     console.log(body)
+//     let card = body
+//     for(let cards of card){
+//         const section = document.createElement("div")
+//         const heading = document.createElement("h3")
+//         section.classList.add("card")
+//         section.appendChild(heading)
+//         displaySection.appendChild(section)
+//     }
+//   })
    
-}
+// }
     
-loadNewCard()
+// loadNewCard()
 
-document.querySelector("#reload").addEventListener("click", ()=>{
-  displaySection.innerHTML = ''
-  loadNewCard()
-});
+// document.querySelector("#reload").addEventListener("click", ()=>{
+//   displaySection.innerHTML = ''
+//   loadNewCard()
+// });
