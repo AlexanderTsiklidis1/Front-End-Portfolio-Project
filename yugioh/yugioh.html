@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=“stylesheet” href=“yugioh.css” />
-    <script src=“yugioh.js” defer></script>
+    <link href="yugioh.css" rel="stylesheet"/>
+
     <title>Yugioh Cards!</title>
 </head>
 <body>
@@ -21,9 +21,68 @@
                     <input type="text" id="card-name" class="input is-dark is-large" 
                     placeholder="Enter Words to Search">
                     <article class="icon is-medium is-left">
-                        <p class="search-icon">
-                        </p>
+                        <i class="search-icon">
+                        </i>
                     </article>
+                </div>
+                <p class="search-button">
+                    <a class="button is-dark is-large" id="scard">
+                        <i class="search-icon2"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="mobile-container">
+            <div class="fluid-container">
+                <div class="columns">
+                    <div class="column vard" id="cardnamelistdiv">
+                        <header class="column-header">
+                            <p class="column-header-title">
+                                <i class="list-icon"></i>
+                                Search List
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <ul id="card-name-list"></ul>
+                        </div>
+                    </div>
+                    <div class="column card" id="card-description">
+                        <header class="column-header">
+                            <p class="column-header-title">
+                                <i class="info-icon"></i>
+                                Card Description
+                            </p>
+                        </header>
+                        <ul>
+                            <div class="card-content">
+                                <li id="cardname" class="title is-2"></li>
+                                <li
+                                    id="cardtype"
+                                    class="subtitle is-4"
+                                ></li>
+                                <li
+                                    id="cardtext"
+                                    class="subtitle is-5"
+                                ></li>
+                        </ul>
+                    </div>
+                    <div class="column card" id="cardimagediv">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <i class="far fa-images"></i>&nbspImage
+                                Preview
+                            </p>
+                        </header>
+                        <div class="card-image">
+                            <div class="card-content">
+                                <!-- Card Image -->
+                                <img
+                                    src="https://vignette.wikia.nocookie.net/yugioh/images/e/e5/Back-EN.png/revision/latest/scale-to-width-down/500?cb=20100726082133"
+                                    id="cardimage"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
