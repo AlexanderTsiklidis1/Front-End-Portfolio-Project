@@ -1,8 +1,8 @@
-const url = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
+// const url = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
 
-const button = document.querySelector("button");
-const input = document.querySelector("input");
-const yugioh = document.querySelector(".Yugioh-Cards");
+// const button = document.querySelector("button");
+// const input = document.querySelector("input");
+// const yugioh = document.querySelector(".Yugioh-Cards");
 
 
 
@@ -26,3 +26,37 @@ const yugioh = document.querySelector(".Yugioh-Cards");
 //     </article>
 // `
 // }
+
+
+
+
+
+const button = document.getElementById("reload");
+const container = document.getElementById("container");
+document.addEventListener("DOMContentLoaded", () => {
+  loadNewCard();
+  button.addEventListener("click", loadNewCard);
+});
+function loadNewCard() {
+  fetch("https://db.ygoprodeck.com/api/v7/randomcard.php").then(response=>{
+    return response.json()
+  }).then(body =>{
+    console.log(body)
+    let card = body
+    for(let cards of card){
+        const section = document.createElement("div")
+        const heading = document.createElement("h3")
+        section.classList.add("card")
+        section.appendChild(heading)
+        displaySection.appendChild(section)
+    }
+  })
+   
+}
+    
+loadNewCard()
+
+document.querySelector("#reload").addEventListener("click", ()=>{
+  displaySection.innerHTML = ''
+  loadNewCard()
+});
