@@ -1,9 +1,9 @@
 const scard = document.getElementById('scard');
 const cardlist = document.getElementById('cardlist');
 document.querySelector('#card-name').addEventListener('keyup', (event) => {
-	if (event.key !== 'Enter') return; // Use `.key` instead.
-	document.querySelector('#scard').click(); // Things you want to do.
-	event.preventDefault(); // No need to `return false;`.
+	if (event.key !== 'Enter') return; // 
+	document.querySelector('#scard').click(); 
+	event.preventDefault();
 });
 
 const searchCard = function () {
