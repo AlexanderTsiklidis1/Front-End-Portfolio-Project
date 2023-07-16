@@ -2,13 +2,42 @@ body {
     background-image: url("./assets/778906.jpg");
   }
   p {
-    color: white;
+    color: blue;
+  }
+  p:hover {
+    background-color: yellow;
   }
   h1 {
     color: white;
+    text-align: center;
   }
   h2 {
-    color: aqua;
+    color: blue;
+}
+h2:hover {
+    background-color: yellow;
+}
+  h1:hover {
+    background-color: blue;
   }
 
+  a:hover {
+    background-color: yellow;
+  }
+img .blue, .dark {
+    size: 200px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.container {
+    display: inline-block;
+    justify-content: center;
+}
+.class {
+    display: inline-block;
+}
+div {
+    display: inline-block;
+}
   

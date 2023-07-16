@@ -32,5 +32,32 @@ nav {
 	text-align: center;
 }
 
+/* @media (min-width:1279px) {
+
+}
 
 
+@media (min-width:768px) and (max-width: 1279px) {
+	.container {
+	   display: grid;
+	   grid-template-columns: repeat (1fr,4);
+	   grid-template-areas: 
+	   "m m"
+		"m"
+   
+	 }
+   }
+   
+   @media (max-width: 767px) {
+   .container {
+	 display: grid;
+	   grid-template-columns: repeat (1fr);
+	   grid-template-areas: 
+	   "m"
+	   "m"
+	   "m"
+   }
+}
+
+
+ */
