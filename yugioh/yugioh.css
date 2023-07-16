@@ -1,4 +1,4 @@
-.main-container {
+body {
 	background-image: url("../assets/yugioh bg.jpeg");
 }
 .title{
@@ -19,45 +19,57 @@
 .container {
 	display: grid;
 	width: max-content;
+	max-height: max-content;
 	grid-template-areas: "m m m";
+	grid-template-columns: auto;
 }
 .columns-card {
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	padding: 20px;
+	padding-bottom: 500px;
 	font-size: 20px;
 	text-align: center;
+	grid-area: "m"
 };
 nav {
 	text-align: center;
+	color: white;
+}
+a {
+	text-align: center;
+	font-size: 50px;
+	color: aliceblue;
+}
+.href{
+	color: white;
 }
 
-/* @media (min-width:1279px) {
+@media (min-width:1279px) {
 
-}
+} 
 
 
 @media (min-width:768px) and (max-width: 1279px) {
-	.container {
+body {
 	   display: grid;
-	   grid-template-columns: repeat (1fr,4);
-	   grid-template-areas: 
-	   "m m"
-		"m"
+	   grid-template-columns: 2fr;
+	}
+.columns-card {
+	background-color: aquamarine;
+}
+}
    
-	 }
+@media (max-width: 767px) {
+   body {
+	display: grid;
+	grid-template-columns: 1fr ;
    }
-   
-   @media (max-width: 767px) {
-   .container {
-	 display: grid;
-	   grid-template-columns: repeat (1fr);
-	   grid-template-areas: 
-	   "m"
-	   "m"
-	   "m"
-   }
+   .columns-card {
+	   background-color: lightblue;
+	}
 }
 
 
- */
+
+ 
