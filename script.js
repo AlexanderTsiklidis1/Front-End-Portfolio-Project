@@ -3,7 +3,21 @@ let url = "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=";
 let cardImage1 = document.getElementById("#card1");
 let cardImage2 = document.getElementById("card2");
 let cardImage3 = document.getElementById("card3");
-
+function fetchImage() {
+    const apiKey = 'YOUR_API_KEY';
+    fetch('https://any-anime.p.rapidapi.com/anime/img', {
+      method: 'GET',
+      headers: {
+        'x-rapidapi-key': apiKey,
+        "x-rapidapi-host": "any-anime.p.rapidapi.com"
+      }
+    })
+      .then(response => response.blob())
+      .then(data => {
+        // Do something with the image data
+      })
+      .catch(error => console.error(error));
+  }
 
 fetch(url)
     .then(data => data.json())
