@@ -1,0 +1,33 @@
+.main-container {
+	background-image: url("../assets/yugioh bg.jpeg");
+}
+.title{
+	text-align: center;
+}
+.subtitle {
+	text-align: center;
+}
+.input-group {
+	justify-content: center;
+}
+.title {
+	color: white;
+}
+.subtitle {
+	color: white;
+}
+.container {
+	display: grid;
+	width: max-content;
+	grid-template-columns: auto auto auto;
+}
+.columns-card {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+};
+
+
+
