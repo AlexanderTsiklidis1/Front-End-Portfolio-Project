@@ -5,7 +5,7 @@ let form = document.querySelector('form')
 let url = "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=";
 let url1 = "https://db.ygoprodeck.com/api/v7/cardinfo.php?id=";
 
-searchName.addEventListener('keyup', (event) => {
+searchName.addEventListener('click', (event) => {
 	if (event.key !== 'Enter') return;
 	searchButton.click(); 
 	event.preventDefault(); 
