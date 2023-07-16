@@ -2,33 +2,40 @@ body {
     background-image: url("./assets/778906.jpg");
   }
   p {
-    color: blue;
+    color: white;
+    text-align: center;
+    font-size: 40px;
   }
+  a {
+    color: white;
+    font-size: 50px;
+  }
+  nav {
+    text-align: center;
+  }
+
   p:hover {
-    background-color: yellow;
+    background-color: blue;
   }
   h1 {
     color: white;
     text-align: center;
+    font-size: 60px;
   }
   h2 {
-    color: blue;
+    color: white;
+    font-size: 50px;
 }
 h2:hover {
-    background-color: yellow;
+    background-color: blue;
 }
   h1:hover {
     background-color: blue;
   }
 
   a:hover {
-    background-color: yellow;
+    background-color: blue;
   }
-img .blue, .dark {
-    size: 200px;
-    display: inline-block;
-    justify-content: center;
-}
 
 .container {
     display: inline-block;
@@ -40,4 +47,38 @@ img .blue, .dark {
 div {
     display: inline-block;
 }
-  
+
+ @media (min-width:768px) and (max-width: 1279px) {
+    .container {
+       display: grid;
+       grid-template-columns: repeat (1fr,4);
+       grid-template-areas: 
+        "m m m"
+     }
+     h2 {
+        text-align: center;
+     }
+   }
+   
+@media (max-width: 767px) {
+   .container {
+     display: grid;
+       grid-template-columns: repeat (1fr);
+       grid-template-areas: 
+       "m m"
+       "m m"
+   }
+    h2 {
+        text-align: center;
+    }
+    h2:hover {
+        background-color: yellow;
+    }
+   }
+     header {
+       display: grid;
+       grid-template-columns: repeat(1fr);
+       grid-template-areas: "h";
+}
+   
+   
