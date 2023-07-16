@@ -15,7 +15,7 @@ Please see below for a preview of a successful search using our website!
 
 <pre>
     <code>
-        <img src= "./assets/Screenshot 2023-07-16 at 6.43.53 AM (2).png">Yu-Gi-Oh Search</a>
+        <img src= "./assets/Screenshot 2023-07-16 at 6.43.53 AM (2).png">
     </code>
 </pre>
 
