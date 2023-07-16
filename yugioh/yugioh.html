@@ -16,81 +16,57 @@
                 <p class="subtitle">Using YGOPRODECK's API</p>
             </article>
             <div class="input-group">
-                <div class="form-outline">
-                  <input id="card-name" type="search" class="form-control" placeholder="Search For Card" />
-                </div>
-                <button id="search-button" type="button" class="btn btn-primary">
-                  <i class="fas fa-search"></i>
+               <form class="searchForm">
+                   <input id="card-name" type="search" class="form-control" placeholder="Search For Card" />
+                </form>
+                <button id="search-button" type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
                 </button>
             </div>
         </div>
-        <div class="outerDiv">
-
-            <div class="container">
-                <!-- <div class="row">
-                    <div class="col"> -->
-                        <div class="columns-card">
-                            <div class="column card" id="cardnamelistdiv">
-                                <header class="card-header">
-                                    <p class="card-header-title">
-                                        <i class="list-icon"></i>
-                                        List of Yu-Gi-Oh Card Names
-                                    </p>
-                                </header>
-                                <div class="card-content">
-                                    <ul id="cardlist"></ul>
-                                </div>
-                            </div>
-                            <!-- </div>
-                            </div> -->
-                        </div>
-                        <!-- <div class="row">
-                            <div class="col"> -->
-                                
-                                <div class="columns-card" id="cardinfo">
-                                    <header class="card-header">
-                                        <p class="card-header-title">
-                                            <i class="info-icon"></i>
-                                            Yu-Gi-Oh Card Info
-                                        </p>
-                                    </header>
-                                    <ul>
-                                        <div class="card-content">
-                                            <li id="cardname" class="nameOfCard"></li>
-                                            <li
-                                            id="cardtype"
-                                            class="cardType"
-                                            ></li>
-                                            <li
-                                            id="cardtext"
-                                            class="cardDesc"
-                                            ></li>
-                                        </div>
-                                    </ul>
-                                </div>
-                                <!-- </div>
-                                </div> -->
-                                <!-- <div class="row">
-                                    <div class="col"> -->
-                                        <div class="columns-card" id="cardimagediv">
-                                            <header class="card-header">
-                                                <p class="card-header-title">
-                                                    <i class="far fa-images"></i>Yu-Gi-Oh Card Image Preview
-                                                </p>
-                                            </header>
-                                            <div class="card-image">
-                                                <div class="card-content">
-                                                    <img
-                                                    src="https://vignette.wikia.nocookie.net/yugioh/images/e/e5/Back-EN.png/revision/latest/scale-to-width-down/500?cb=20100726082133"
-                                                    id="cardimage"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <!-- </div>
-                                            </div> -->
-                     </div>
+        <div class="container">
+            <div class="columns card" id="cardnamelistdiv">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        <i class="list-icon"></i>
+                            List of Yu-Gi-Oh Card Names
+                    </p>
+                </header>
+                <div class="card-content">
+                    <ul id="cardlist"></ul>
                 </div>
             </div>
+            <div class="columns-card" id="cardimagediv">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        <i class="far fa-images"></i>Yu-Gi-Oh Card Image Preview
+                    </p>
+                </header>
+                <div class="card-image">
+                    <div class="card-content">
+                        <img
+                            src="https://vignette.wikia.nocookie.net/yugioh/images/e/e5/Back-EN.png/revision/latest/scale-to-width-down/500?cb=20100726082133"
+                            id="cardimage"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="columns-card" id="cardinfo">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        <i class="info-icon"></i>
+                        Yu-Gi-Oh Card Info
+                    </p>
+                </header>
+                <ul>
+                    <div class="card-content">
+                        <li id="cardname" class="nameOfCard"></li>
+                        <li id="cardtype" class="cardType"></li>
+                        <li id="cardtext" class="cardDesc"></li>
+                    </div>
+                </ul>
+            </div>               
+        </div>
     </article>
 </body>
 </html>
