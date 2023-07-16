@@ -1,9 +1,13 @@
-const scard = document.getElementById('scard');
+const searchButton = document.getElementById('search-button');
 const cardlist = document.getElementById('cardlist');
-let url = "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname="
-document.querySelector('#card-name').addEventListener('keyup', (event) => {
+let searchName = document.getElementById('card-name');
+let url = "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=";
+let url1 = "https://db.ygoprodeck.com/api/v7/cardinfo.php?id=";
+
+
+searchName.addEventListener('keyup', (event) => {
 	if (event.key !== 'Enter') return;
-	document.querySelector('#scard').click(); 
+	searchButton.click(); 
 	event.preventDefault(); 
 });
 
@@ -38,12 +42,11 @@ const searchCard = function () {
 const selectCard = function (e) {
 	let listId = e.target.id;
 
-	fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?id=${listId}`)
+	fetch(`${url1}${listId}`)
 		.then(function (response) {
 			return response.json();
 		})
 		.then(function (data) {
-			// console.log(data);
 			let cardDetail = data;
 
 			let cardName = document.getElementById('cardname');
@@ -74,11 +77,12 @@ const selectCard = function (e) {
 	
 };
 
+
 if (this.addEventListener) {
 	
-	scard.addEventListener('click', searchCard);
+	searchButton.addEventListener('click', searchCard);
 	cardlist.addEventListener('click', selectCard);
 } else if (this.attachEvent) {
-	scard.attachEvent('onclick', searchCard);
+	searchButton.attachEvent('onclick', searchCard);
 	cardlist.attachEvent('onclick', selectCard);
 }
