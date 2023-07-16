@@ -81,7 +81,8 @@ const selectCard = function (e) {
 if (this.addEventListener) {
 	searchButton.addEventListener('click', searchCard);
 	cardlist.addEventListener('click', selectCard);
-} else if (this.attachEvent) {
-	searchButton.attachEvent('onclick', searchCard);
-	cardlist.attachEvent('onclick', selectCard);
 }
+// } else if (this.attachEvent) {
+// 	searchButton.attachEvent('onclick', searchCard);
+// 	cardlist.attachEvent('onclick', selectCard);
+// }

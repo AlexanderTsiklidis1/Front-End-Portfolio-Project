@@ -1,4 +1,27 @@
-// const url = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
+console.log("this script");
+let url = "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=";
+let cardImage1 = document.getElementById("cardImage1");
+let cardImage2 = document.getElementById("cardImage2");
+let cardImage3 = document.getElementById("cardImage3");
+
+
+function fetchImage() {fetch(url).then(response => response.json()).then(data => 
+{
+    let cardInfo = data;
+    let img1 = cardInfo[0].card_images[0].image_url;
+    let img2 = cardInfo[1].card_images[0].image_url;
+    let img3 = cardInfo[2].card_images[0].image_url;
+
+    cardImage1.src = img1
+    cardImage2.src = img2
+    cardImage3.src = img3
+});
+};
+
+
+
+
+//const url = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
 
 // const button = document.querySelector("button");
 // const input = document.querySelector("input");
